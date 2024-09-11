@@ -9,7 +9,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4500", "https://alexistripailaoherrera.github.io/PAES-FRONT/")
+                .allowedOrigins("http://localhost:4500", "https://alexistripailaoherrera.github.io")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*"); // Si necesitas enviar cookies o autenticación
     }
